@@ -1,0 +1,75 @@
+PIDs:
+  X:
+    kp: 40.0 #40, 20, 2, +-30, +-0.1
+    kd: 20.0 #30.0 8.0 2.0
+    ki: 2.0  # 30.0, 20.0, 2.0*
+    minOutput: -30.0
+    maxOutput: 30.0
+    integratorMin: -0.1
+    integratorMax: 0.1
+  Y:
+    kp: -40.0
+    kd: -20.0
+    ki: -2.0
+    minOutput: -30.0
+    maxOutput: 30.0
+    integratorMin: -0.1
+    integratorMax: 0.1
+  Z:
+    kp: 30000.0 # 20000 10000 3387
+    kd: 10000.0 # 40k ...
+    ki: 10000.0 
+    minOutput: -50000.0 
+    maxOutput: 50000.0
+    integratorMin: -10.0
+    integratorMax: 10.0 
+  Yaw:
+    kp: -200.0
+    kd: -20.0
+    ki: 0.0
+    minOutput: -200.0
+    maxOutput: 200.0
+    integratorMin: 0.0
+    integratorMax: 0.0
+
+  XTrack:
+    kp: 600 
+    kd: 250.0 # previously: 500 125.0
+    ki: 0.0 
+    minOutput: -10000.0 
+    maxOutput: 10000.0
+    integratorMin: -10
+    integratorMax: 10
+
+  YTrack:
+    kp: 600 #600. 250 *
+    kd: 250.0 
+    ki: 0.0 
+    minOutput: -10000.0 
+    maxOutput: 10000.0
+    integratorMin: -10
+    integratorMax: 10 
+
+  ZTrack: # 15.0, 11.0, 3.5*
+    kp: 15.0 # 50K, 20K *
+    kd: 11.0 # 60K, 20K
+    ki: 3.5  # 10K, 20K, 200
+    minOutput: -50000.0 
+    maxOutput: 50000.0
+    integratorMin: -100.0
+    integratorMax: 100.0 
+
+Aggs: 0.2 # aggs:5.0-snapvel:1.45
+
+SnapVel: 0.4
+
+mpchorizon: 3.0  # in second
+
+sineLogBase: 4
+
+
+logBase: 16
+
+sineXLogBase: 7
+sineYLogBase: 4
+sineZLogBase: 4
